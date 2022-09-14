@@ -6,6 +6,7 @@ def mystere(n):
         reponse = True
     else:
         reponse = False
+        return "Le nombre n'est pas premier"
     return reponse
 
 c = mystere(6)
