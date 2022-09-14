@@ -12,7 +12,7 @@ Guido van Rossen a crée le langage Python en 1989. C'est un langage haut-niveau
 `//` renvoie le coetient de la division euclidienne.  
 `%` renvoie le reste de la division euclidienne.
 ___
->**Remarque**
+>**Remarque**  
 `a` est paire <=> `a%2==0`.  
 `==` est un booléen.
 ___
@@ -56,7 +56,7 @@ def nom_variable(argument):
 ```
 
 ___
->**Remarque**
+>**Remarque**  
 Une variable crée à l'intérieure de la fonction est appellée une variable locale.
 ___
 
@@ -83,7 +83,7 @@ for i in range(0,10):
 
 >Le bloc sera répété 10 fois, i prend les valeurs de 0 à 9 inclus (de 1 en 1).
 ___
->**Remarque**
+>**Remarque**  
 
 ```python
 for i in range(4,9,3):
