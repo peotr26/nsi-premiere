@@ -2,8 +2,10 @@
 
 from math import sqrt
 
-def pi():
+def pi(n):
 	a=1
-	for i in range(2,1000):
+	for i in range(2,n):
 		a=a+(1/i)**2
-	print(sqrt(6*a))
+	return sqrt(6*a)
+ 
+print(pi(1000))

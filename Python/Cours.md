@@ -112,6 +112,8 @@ tant que cond:
     bloc d'instruction
 ```
 
+>Ce bloc sera executé tant que la condition de départ est vraie.
+
 En Python :
 
 ```python
