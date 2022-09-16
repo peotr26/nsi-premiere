@@ -15,4 +15,4 @@ def syra(a):
             temps_vol_alt = temps_vol_alt + 1
     print('\n Temps de vol : \n', temps_vol, '\n Altitude maximale : \n', alt_max, '\n Temps de vol en altitude : \n', temps_vol_alt )
 
-syra(127)
+syra(123)

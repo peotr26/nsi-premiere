@@ -9,3 +9,4 @@ def pi(n):
 	return sqrt(6*a)
  
 print(pi(1000))
+print(pi(10000000))

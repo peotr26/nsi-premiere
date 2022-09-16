@@ -23,7 +23,7 @@ ___
 
 En Python, on écrit : `a=2`.
 
-## III. Strucctures conditionelles
+## III. Structures conditionelles
 
 ```python
 if cond:
