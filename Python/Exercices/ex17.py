@@ -8,5 +8,4 @@ def pi(n):
 		a=a+(1/i)**2
 	return sqrt(6*a)
  
-print(pi(1000))
-print(pi(10000000))
+print(pi(1000000000))

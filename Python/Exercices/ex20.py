@@ -1,6 +1,3 @@
-from re import A
-
-
 def mutliplication(a,b):
     """
     This function will multiply a with b.
