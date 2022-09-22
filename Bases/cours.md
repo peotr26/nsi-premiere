@@ -34,3 +34,44 @@ Nous avons 16 symboles : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B , C, D, E, F.
 $17B_{16} = 1 \times 16^2 + 7 \times 16^1 + 11 \times 16^1$  
 $17B_{16} = 256 + 112 + 11$  
 $17B_{16} = 379$
+
+Définition :
+
+On considère b un entier naturel supérieur ou égal à 2. Un entier naturel s'écrit, dans une numération positionnelle : ${a_n a_{n-1} ... a_1 &_0}_b$  
+$a_n, a_{n-1}, ..., a_0$ sont des des symboles scpécifiques en base b. Il y a b symboles scpécifiques en base b.  
+${a_n a_{n-1} ... a_1 a_0}_b = a_n \times b^n + a_{n-1} \times b^{n-1} + ... + a_1 \times b^1 + a_0 \times b^0$  
+$= \sigma{n}{i=0} a_i \times b^1$ //Verifier sigma.
+
+>Remarques :  
+>- $a_n$ se lit "a indice n".  
+>- $\Sigma$ correspont à sigma qui vient du grand *S* de somme.
+>- $\Sigma{5}{i=0}i^2 = 0^2 + 1^2 + 2^2 + 3^2 + 4^2 + 5^2$
+
+Eg//
+
+$\underline{102D}_{14}$
+
+Ecrire en base 10.
+
+$= 1 \times 14^3 + 0 \times 14^2 + 2 \times 14^1 + 13 \times 14^0$  
+$= 2744 + 28 + 13$  
+$=\underline{2785}$
+
+## Passage de la base 10 à la base 2
+
+Eg// écrire 37 en base 2.
+
+Première méthode : La méthode des soustrations succesives
+
+$37 - 32 = 5$  
+$37 = 2^5 +5$  
+$5-4 = 1$  
+$37 = 2^5 + 2^2 + 2^0$  
+$37 = \underline{100101}_2$  
+
+
+`bin(37)`vous renvoie "ob100101"
+
+Deuxième méthode : La méthode des divisions euclidiennes successives. (ici c'est par 2).
+
+Voir cahier de brouillon.
