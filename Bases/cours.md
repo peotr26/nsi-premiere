@@ -37,15 +37,15 @@ $17B_{16} = 379$
 
 Définition :
 
-On considère b un entier naturel supérieur ou égal à 2. Un entier naturel s'écrit, dans une numération positionnelle : ${a_n a_{n-1} ... a_1 &_0}_b$  
+On considère b un entier naturel supérieur ou égal à 2. Un entier naturel s'écrit, dans une numération positionnelle : ${a_n a_{n-1} ... a_1 a_0}_b$  
 $a_n, a_{n-1}, ..., a_0$ sont des des symboles scpécifiques en base b. Il y a b symboles scpécifiques en base b.  
 ${a_n a_{n-1} ... a_1 a_0}_b = a_n \times b^n + a_{n-1} \times b^{n-1} + ... + a_1 \times b^1 + a_0 \times b^0$  
-$= \sigma{n}{i=0} a_i \times b^1$ //Verifier sigma.
+$= \sum_{n}^{i=0} a_i \times b^1$
 
 >Remarques :  
 >- $a_n$ se lit "a indice n".  
 >- $\Sigma$ correspont à sigma qui vient du grand *S* de somme.
->- $\Sigma{5}{i=0}i^2 = 0^2 + 1^2 + 2^2 + 3^2 + 4^2 + 5^2$
+>- $\sum_{5}^{i=0}i^2 = 0^2 + 1^2 + 2^2 + 3^2 + 4^2 + 5^2$
 
 Eg//
 
