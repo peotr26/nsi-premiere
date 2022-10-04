@@ -1,7 +1,5 @@
 from turtle import *
 
-w = - window_width()
-h = 0
 color('orange')
 
 def triangle(c,w,h):

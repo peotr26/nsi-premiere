@@ -1,9 +1,7 @@
 from turtle import *
 
-w = - window_width()
-h = 0
 color('orange')
-speed()
+speed(0)
 
 def polynome(c,n,w,h):
     up()
