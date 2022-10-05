@@ -8,7 +8,7 @@ def texte():
     goto(0, 350)
     write('Un bel échiquier !')
 
-def echiquier():
+def fond():
     goto(-200, -200)
     down()
     color("white")
@@ -18,25 +18,31 @@ def echiquier():
         left(90)
     end_fill()
     up()
-    carre()
 
 def carre():
+    begin_fill()
+    for i in range(0, 4):
+        forward(400/8)
+        left(90)
+    end_fill()
+    up()
+    forward(400/4)
+    down()
+
+def echiquier():
     color("black")
-    for i in range(0, 8):
-        for i in range(0,4):
-            begin_fill()
-            for i in range(0, 4):
-                forward(400/8)
-                left(90)
-            end_fill()
+    for i in range(0, 4):
+        for i in range(0, 2):
+            for i in range(0,4):
+                carre()
             up()
+            left(90)
             forward(400/4)
-            down()
-        up()
+            left(90)
         left(90)
         forward(400/4)
-        left(90)
+        left(180+90)
         
-    
+fond()    
 echiquier()
 mainloop()
