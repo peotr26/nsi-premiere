@@ -11,8 +11,8 @@ def color_b(x, y):
         color('green')
     if x%2 == 0 and y%2 == 0:
         color('yellow')
-
-def pantagone():
+        
+def variaton():
     for i in range(0,10):
         x = randrange(-400, 400)
         y = randrange(-400, 400)
@@ -20,10 +20,13 @@ def pantagone():
         up()
         goto(x, y)
         down()
-        for i in range(0, 6):
-            forward(30)
-            left(360/5)
-        up()
+        pantagone()
+
+def pantagone():
+    for i in range(0, 6):
+        forward(30)
+        left(360/5)
+    up()
         
 pantagone()
 
