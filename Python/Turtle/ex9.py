@@ -27,6 +27,29 @@ def bold_cross(c, b, color_b):
     down()
     forward(c*2)
     up()
+
+def quarter_circle(r):
+    down()
+    circle(r, 270)
+    up()
+    circle(r, 90)
+
+def disk(a, b, color_b):
+    down()
+    color(color_b)
+    begin_fill()
+    circle(a, b)
+    end_fill()
+    up()
+
+def bottom_sign(c):
+    down()
+    right(90)
+    forward(c)
+    up()
+    forward(c/9)
+    right(90)
+    disk(1, 360, "black")
     
 def figure1(x, y, c):
     up()
@@ -34,8 +57,21 @@ def figure1(x, y, c):
     filled_square(c, "black")
     goto(x, y)
     bold_cross(c/1.5, c/6, "white")
-    
-figure1(0, 0, 50)
+
+def figure2(x, y, c):
+    up()
+    goto(x, y)
+    width(3)
+    quarter_circle(c)
+    bottom_sign(c)
+    ht()
+
+def affichage():
+    figure1(-100, 0, 50)
+    color("black")
+    figure2(100, 0, 40)
+
+affichage()
 
 mainloop()
 
