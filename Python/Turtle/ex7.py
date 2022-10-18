@@ -1,12 +1,14 @@
 from turtle import *
 
 up()
+ht()
 bgcolor("lightgrey")
 speed(0)
 
-def texte():
-    goto(0, 350)
-    write('Un bel échiquier !')
+def texte(x, y):
+    goto(x, y)
+    width(15)
+    write('Un bel échiquier !', align='center', font=('times new roman', 20, 'bold'))
 
 def fond():
     goto(-200, -200)
@@ -42,7 +44,11 @@ def echiquier():
         left(90)
         forward(400/4)
         left(180+90)
-        
-fond()    
-echiquier()
+
+def affichage():        
+    fond()    
+    echiquier()
+    texte(0, 230)
+    
+affichage()
 mainloop()
