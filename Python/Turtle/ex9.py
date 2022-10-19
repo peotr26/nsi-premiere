@@ -74,4 +74,3 @@ def affichage():
 affichage()
 
 mainloop()
-
