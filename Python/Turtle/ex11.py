@@ -1,5 +1,7 @@
 from turtle import *
 
+speed(0)
+
 def coloured_circle(r, dg, b, colour):
     '''
     Function that will draw a circle depending on the radius, degree, boldness and colour.

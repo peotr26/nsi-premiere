@@ -19,5 +19,5 @@ def display(factor):
         a = b
         b = temp + b
 
-display(0.2)
+display(0.1)
 mainloop()
