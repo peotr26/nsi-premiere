@@ -6,7 +6,7 @@ speed(0)
 
 def goto_am(x,y):
     up()
-    goto(x, y)
+    goto(x,y)
     down()
 
 def move(s,o):
@@ -17,8 +17,8 @@ def move(s,o):
 
 def go_back(s,o):
     up()
-    move(s, o+180)
-    move(s/20, o+90)
+    move(s,o+180)
+    move(s/20,o+90)
     down()
     
 def line(s,o,colour):
@@ -29,16 +29,17 @@ def line(s,o,colour):
 
 def main_structure(x,y,s):
     goto_am(x, y)
+    color('black')
     for i in range(0,4):
         forward(s)
         left(90)
 
 def opening(x,y,s,o):
-    goto_am(x, y)
-    line(s/20, o, 'white')
+    goto_am(x,y)
+    line(s/20,o,'white')
     
 def choose_colour():
-    if randrange(0,5) == 0:
+    if randrange(0,4) == 0:
         return 'white'
     else:
         return 'black'
@@ -50,18 +51,21 @@ def serie_line(s,o):
 def draw_series(s):
     a = 19
     while a != 0:
-        serie_line(s, 0)
-        go_back(s, 0)
+        serie_line(s,0)
+        go_back(s,0)
         a -= 1
-    move(s, -180)
-    for i in range(1, 20):
-        serie_line(s, 90)
-        go_back(s, 90)
-        
-    
+    move(s/20,0)
+    for i in range(1,20):
+        serie_line(s,180+90)
+        go_back(s,180+90)
 
 def display():
-    main_structure(-200,-200, 400)
+    up()
+    goto(-200,-180)
+    draw_series(400)
+    main_structure(-200,-200,400)
+    opening(-200,-200,400,0)
+    opening(200,200,400,180)
    
-draw_series(400) 
+display()
 mainloop()
