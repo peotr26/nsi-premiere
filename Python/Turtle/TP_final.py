@@ -3,6 +3,7 @@ from random import randrange
 
 bgcolor('white')
 speed(0)
+ht()
 
 def goto_am(x,y):
     up()
@@ -59,6 +60,13 @@ def draw_series(s):
         serie_line(s,180+90)
         go_back(s,180+90)
 
+def text(x,y):
+    color('black')
+    up()
+    goto(x, y)
+    width(15)
+    write('Un labyrinthe pas forcement possible !',align='center',font=('times new roman',20,'bold'))
+
 def display():
     up()
     goto(-200,-180)
@@ -66,6 +74,7 @@ def display():
     main_structure(-200,-200,400)
     opening(-200,-200,400,0)
     opening(200,200,400,180)
+    text(0,250)
    
 display()
 mainloop()
