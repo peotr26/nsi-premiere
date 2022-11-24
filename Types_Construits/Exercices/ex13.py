@@ -1,13 +1,11 @@
 def cinq(t):
     n = len(t)
-    inferieur = []
-    superieur = []
+    inferieur = []; superieur = []
     for i in range(0,n):
-        animal = t[i]
-        if len(animal) < 5:
-            inferieur.append(animal)
+        if len(t[i]) < 5:
+            inferieur.append(t[i])
         else:
-            superieur.append(animal)
+            superieur.append(t[i])
     return inferieur, superieur
 
 t = ['chat', 'serpent', 'souris', 'chien', 'canard', 'ours']

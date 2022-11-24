@@ -4,7 +4,7 @@ def double_voyelle(ch):
     final = ''
     for i in range(0,n):
         final += ch[i]
-        if any(voyelle in ch[i] for voyelle in voyelles):   # Vérifie si le charactère correspond à un charactère dans la liste voyelles.
+        if ch[i] in voyelles:               # Vérifie si le charactère correspond à un charactère dans la liste voyelles.
             final += ch[i]
     return final
 

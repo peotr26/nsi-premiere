@@ -2,7 +2,7 @@ def pair_ou_impair(t):
     n = len(t)
     pair = []
     impair = []
-    for i in range(0, n-1):
+    for i in range(0, n):
         a = t[i]
         if a%2 == 0:
             pair.append(a)
