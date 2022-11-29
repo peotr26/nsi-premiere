@@ -1,4 +1,5 @@
-def alternance(l1, l2):
+def alternance(l1:list, l2:list)->list:
+    assert len(l1) == len(l2)
     l3 = []
     n = len(l1)
     for i in range(0,n):
