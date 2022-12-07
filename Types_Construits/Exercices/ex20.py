@@ -3,4 +3,3 @@ def f(x:bool, y:bool)->int:
     return int(result)
 
 assert f(True, True) == 1
-print(f(True, True))
