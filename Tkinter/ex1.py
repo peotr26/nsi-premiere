@@ -9,6 +9,9 @@ H = 600
 
 def draw():
     can.create_oval(100, 100, 500, 500, fill='black')
+    can.create_line(150, 150, 450, 450, width=20, fill='white')
+    can.create_oval(350, 200, 400, 250, fill='white')
+    can.create_oval(200, 350, 250, 400, fill='white')
 
 def reset():
     can.delete(ALL)
