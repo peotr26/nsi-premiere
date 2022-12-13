@@ -1,10 +1,11 @@
 from tkinter import *
-from random import randint
+from random import randint, randrange
 
 # Variables
 
 W = 400
 H = 400
+list_colour = ['black', 'yellow', 'red', 'blue']
 
 # Fonctions
 
@@ -18,7 +19,8 @@ def draw2():
     for i in range(0, 10):
         place_x = randint(W-397, W-33)
         place_y = randint(H-397, H-33)
-        can.create_oval(place_x, place_y, place_x+30, place_y+30, fill='black')
+        colour = list_colour[randrange(0, len(list_colour))]
+        can.create_oval(place_x, place_y, place_x+30, place_y+30, fill=colour)
 
 def reset():
     can.delete(ALL)
@@ -26,7 +28,7 @@ def reset():
 # Widgets
 
 win = Tk()
-win.title('Random circles')
+win.title('Random')
 
 can = Canvas(win, width=W, height=H, bg='white')
 can.pack(side=RIGHT)
