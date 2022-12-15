@@ -33,7 +33,7 @@ def reset():
 # Widgets
 
 win = Tk()
-win.title('Random')
+win.title('Face or flag')
 
 can = Canvas(win, width=W, height=H, bg=colour[2])
 can.pack(side=RIGHT)
@@ -48,6 +48,6 @@ but3 = Button(win, text='Reset', fg=colour[1], bg=colour[2], command=reset)
 but3.pack(pady=15)
 
 but4 = Button(win, text='Quit', fg=colour[1], bg=colour[2], command=win.quit)
-but4.pack(pady=15)
+but4.pack(pady=15, side=BOTTOM)
 
 win.mainloop()
