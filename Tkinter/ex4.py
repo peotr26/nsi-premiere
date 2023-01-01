@@ -21,7 +21,7 @@ colour1 = [
 def three():
     for i in range(0, 3):
         col = colour1[randint(0,i)]
-        w = randrange(W-W+25, W-250) ; h = randrange(H-H+25, H-250)
+        w = randrange(W-W+25, W-275) ; h = randrange(H-H+25, H-305)
         can.create_rectangle(w, h, w+2*w, h+3*h, fill=col)
 
 def five():
