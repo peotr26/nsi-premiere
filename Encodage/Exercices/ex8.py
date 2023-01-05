@@ -1,16 +1,14 @@
-def invert(binary:list)->list:
-    n = len(binary)
+# Fonctions
+
+def invert(binary:list, n:int)->list:
     for i in range(0, n):
-        temp = binary[i]
-        if temp == 0:
+        if binary[i] == 0:
             binary[i] = 1
         else:
             binary[i] = 0
     return binary
 
-def addition(binary:list)->list:
-    n = len(binary)
-    ret = 0
+def addition(binary:list, n:int)->list:
     if binary[n-1] == 0:
         binary[n-1] = 1
     else:
@@ -26,11 +24,22 @@ def addition(binary:list)->list:
                 binary[i] = 0 ; ret = 1
     return binary
 
+def addition_min(binary:list, n:int)->list:
+    i = n-1
+    while binary[i] == 1:
+        b[i] = 0
+        i -= 1
+    b[i] = 1
+    return binary
+
 def complement_deux(b:list)->list:
-    result = invert(b)
-    result = addition(result)
+    n = len(b)
+    result = invert(b, n)
+    result = addition(result, n)
     return result
 
+# Vérification du code
+ 
 assert complement_deux([1,1,1,1]) == [0,0,0,1]
 assert complement_deux([1,1,1,0]) == [0,0,1,0]
 assert complement_deux([1,1,0,1]) == [0,0,1,1]

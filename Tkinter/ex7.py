@@ -9,25 +9,14 @@ colour = [
     '#000000',  # Noir
     '#FFFFFF',  # Blanc
 ]
-colour1 = [
-    'blue',
-    'red',
-    'yellow',
-    'green'
-]
 
 # Fonctions
 
-def three():
-    for i in range(0, 3):
-        col = colour1[randint(0,2)]
-        w = randrange(W-W+25, W-275) ; h = randrange(H-H+25, H-305)
-        can.create_rectangle(w, h, w+2*w, h+3*h, fill=col)
+def horizontal():
+    for i in range(0, 10):
 
-def five():
-    for i in range(0, 5):
-        w = randrange(W-W+25, W-125) ; h = randrange(H-H+25, H-175)
-        can.create_rectangle(w, h, w+100, h+150, fill=colour1[3])
+def vertical():
+    
         
 def reset():
     can.delete(ALL)
