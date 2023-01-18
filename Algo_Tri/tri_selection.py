@@ -1,5 +1,4 @@
 from random import shuffle
-from time import sleep
 
 def tri_selection(t:list)->list:
     n = len(t)
@@ -10,14 +9,11 @@ def tri_selection(t:list)->list:
                 indice_mini = j
         temp = t[i]
         t[i] = t[indice_mini]
-        t[i] = temp
-        print(t)
-        sleep(2)
+        t[indice_mini] = temp
     return t
 
-t = [i for i in range(0, 10)]
-print(t)
+t = [i for i in range(0, 100000)]
+origin = t
 shuffle(t)
-print(t)
 t = tri_selection(t)
-print(t)
+assert t == origin
