@@ -12,7 +12,7 @@ def tri_selection(t:list)->list:
         t[indice_mini] = temp
     return t
 
-t = [i for i in range(0, 100000)]
+t = [i for i in range(0, 1000)]
 origin = t
 shuffle(t)
 t = tri_selection(t)
