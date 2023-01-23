@@ -13,7 +13,7 @@ def tri_selection(t:list)->list:
     return t
 
 t = [i for i in range(0, 1000)]
-origin = t
+origin = list(t)
 shuffle(t)
 t = tri_selection(t)
 assert t == origin
