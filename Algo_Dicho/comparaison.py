@@ -9,7 +9,7 @@ temps_naif = []
 nb_valeurs = []
 
 for v in range(0, 100001, 1000):
-    nb_valeurs.append(v**2)
+    nb_valeurs.append(v)
 
 for v in range(0, 100001, 1000):
     L = [e**2 for e in range(v)]
@@ -29,7 +29,7 @@ for v in range(0, 100001, 1000):
 
 plt.scatter(nb_valeurs, temps_dicho, s=1)
 plt.scatter(nb_valeurs, temps_naif, s=1)
-plt.ylabel("Temps d'execution (en secondes)")
+plt.ylabel("Temps d'exécution (en secondes)")
 plt.xlabel("Nombre de valeurs dans la liste")
 plt.title(
     "Temps d'exécution des fonctions recherche naïf et de recherche \n"
