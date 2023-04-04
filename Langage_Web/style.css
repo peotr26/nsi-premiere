@@ -1,0 +1,30 @@
+body
+{
+	font-family : Linux Libertine O, Liberation Serif, Times New Roman;
+	text-align : justify;
+	margin : 5% 20% 5% 20%;
+	background-color : #e0c9a6;
+}
+
+h1
+{
+	text-align : center;
+	font-size : 3em;
+}
+
+.image
+{
+	text-align : center;
+}
+
+.source
+{
+	font-size : 0.8em;
+	font-family : Linux libertine Mono 0, Liberation Mono;
+	text-align : right;
+}
+
+#big_margin
+{
+	padding-top : 5%
+}
