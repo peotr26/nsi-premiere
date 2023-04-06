@@ -1,0 +1,57 @@
+body
+{
+	margin : 2% 25% 2% 25%;
+	font-family : Liberation Sans, Arial;
+	font-weight : bold
+}
+
+h1
+{
+	color : red;
+}
+
+h2
+{
+	background-color : green;
+	margin-right : 75%;
+}
+
+em
+{
+	color : red;
+}
+
+ul
+{
+	color : #00aa7f;
+	list-style-type : circle;
+	font-weight : normal;
+}
+
+ol
+{
+	color : #00aa7f;
+	list-style-type : upper-roman;
+	font-weight : normal;
+}
+
+mark
+{
+	color : red;
+	background-color : #55ffff;
+}
+
+.jaune
+{
+	color : yellow;
+}
+
+.vert
+{
+	color : green;
+}
+
+.marron
+{
+	color : brown;
+}
