@@ -1,6 +1,6 @@
 def recherche(elt: int, tab: list) -> int:
     '''
-    Fonction qui cherche la 1ere occurence d'un entier, elt, dans une liste, tab.
+    Fonction qui cherche la 1ere occurrence d'un entier, elt, dans une liste, tab.
     '''
     n = len(tab)
     for i in range(0, n):
