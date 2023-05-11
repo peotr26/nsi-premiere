@@ -1,5 +1,6 @@
 import csv
 
+# Création de la liste avec les informations.
 table7Pays = [
     {"Pays": "Albanie", "Capitale": "Tirana", "Superficie(en km2)": 28748, "Monnaie": "Lek"},
     {"Pays": "Allemagne", "Capitale": "Berlin", "Superficie(en km2)": 357121, "Monnaie": "Euro"},
@@ -10,6 +11,7 @@ table7Pays = [
     {"Pays": "Belgique", "Capitale": "Bruxelles", "Superficie(en km2)": 30528, "Monnaie": "Euro"}
     ]
 
+# Ouverture et écriture de la liste dans le fichier CSV.
 fichier = open("table_7Pays.csv", 'w')
 tableau = csv.DictWriter(fichier, ['Pays', 'Capitale', 'Superficie(en km2)', 'Monnaie'])
 tableau.writeheader()
