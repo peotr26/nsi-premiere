@@ -49,5 +49,4 @@ def zoomDessin(grille, k):
     return grille_zoom
 
 
-print(affiche(coeur))
 print(affiche(zoomDessin(coeur, 3)))
