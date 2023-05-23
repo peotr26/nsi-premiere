@@ -1,19 +1,11 @@
-import csv
-
-# Création de la liste avec les informations.
-table7Pays = [
-    {"Pays": "Albanie", "Capitale": "Tirana", "Superficie(en km2)": 28748, "Monnaie": "Lek"},
-    {"Pays": "Allemagne", "Capitale": "Berlin", "Superficie(en km2)": 357121, "Monnaie": "Euro"},
-    {"Pays": "Andorre", "Capitale": "Andorre-La-Vieille", "Superficie(en km2)": 468, "Monnaie": "Euro"},
-    {"Pays": "Arménie", "Capitale": "Erevan", "Superficie(en km2)": 29743, "Monnaie": "Dram"},
-    {"Pays": "Autriche", "Capitale": "Vienne", "Superficie(en km2)": 83879, "Monnaie": "Euro"},
-    {"Pays": "Azerbaïdjan", "Capitale": "Bakou", "Superficie(en km2)": 86600, "Monnaie": "Manat"},
-    {"Pays": "Belgique", "Capitale": "Bruxelles", "Superficie(en km2)": 30528, "Monnaie": "Euro"}
+mendeleiev = [
+    ['H', '.', '.', '.', '.', '.', '.', 'He'],
+    ['Li', 'Be', 'B', 'C', 'O', 'Fl', 'Ne']
     ]
 
-# Ouverture et écriture de la liste dans le fichier CSV.
-fichier = open("table_7Pays.csv", 'w')
-tableau = csv.DictWriter(fichier, ['Pays', 'Capitale', 'Superficie(en km2)', 'Monnaie'])
-tableau.writeheader()
-tableau.writerows(table7Pays)
-fichier.close
+gaz_rares = []
+
+for ligne in mendeleiev:
+    gaz_rares.append(ligne[len(ligne)-1])
+
+print(gaz_rares)
