@@ -38,4 +38,3 @@ tableau = csv.DictWriter(fichier, [
 tableau.writeheader()
 tableau.writerows(tablePaysComplete)
 fichier.close
-
